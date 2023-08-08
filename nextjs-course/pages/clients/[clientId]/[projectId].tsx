@@ -1,3 +1,4 @@
+import MainMenuBar from "@/common/components/MainMenuBar";
 import { useRouter } from "next/router";
 
 const ClientProject = ():JSX.Element => {
@@ -7,8 +8,11 @@ const ClientProject = ():JSX.Element => {
 
     return <div>
         <h1>Client Project</h1>
-        <p>clientId: {clientId}</p>
-        <p>projectId: {projectId}</p>
+        <MainMenuBar />
+        <div>
+            <p>clientId: {clientId}</p>
+            <p>projectId: {projectId}</p>
+        </div>
     </div>
 }
 

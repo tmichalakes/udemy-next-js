@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from "next/link";
+import MainMenuBar from '@/common/components/MainMenuBar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,9 +18,8 @@ const Home = (): JSX.Element => {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          Hola, Próximo Mundo
-          <Link href="/about">ABOUT?!</Link>
-          <Link href="/products">PRODUCTS?!?!!</Link>
+          <h1>Hola, Próximo Mundo</h1>
+          <MainMenuBar />
         </div>
       </main>
     </>
